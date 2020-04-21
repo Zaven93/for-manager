@@ -1,0 +1,78 @@
+.calendar-container {
+    min-width: 60%;
+    background: #F3F3F3;
+    border-radius: 8px;
+    padding: 16px 10px 0px;
+    font-family: "Roboto", sans-serif;
+
+    @media (min-width: 1700px){
+        min-width: 75%;
+    }
+    
+    .calendar-header {
+        display: flex;
+
+        .button {
+            cursor: pointer;
+            
+            &:hover {
+                transform: scale(1.2);
+                transition: all 0.2s ease-in;
+            }
+        }
+
+        .month{
+            margin-left: auto;
+            margin-right: auto;
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 500;
+            color: #595959;
+        }
+    }
+
+    .week-days {
+        display: flex;
+        justify-content: space-between;
+
+        .dates {
+            h1 {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19px;
+                color: #888888;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                margin-top: 8px;
+                margin-bottom: 10px;
+                font-size: 16px;
+                padding: 4px 4px;
+                cursor: pointer;
+            
+
+                &.active-day {
+                    color: #ffffff;
+                    border-radius: 50%;
+                    background: #1B65BB;
+                    margin: 0;
+                    transition: all 0.2 ease-in;
+
+                    &:hover {
+                        border-bottom: unset;
+                    }
+                }
+
+                &:hover {
+                    border-bottom: 5px solid #1B65BB;
+                    border-radius: 50%;
+                    transition: all 0.2s ease-in;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

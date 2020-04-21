@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from "react";
+import Sidebar from "./components/Sibar";
+import "./App.scss"
+import { Switch, Route, useHistory } from "react-router-dom";
+import Deals from "./components/Deals";
+import Contacts from "./components/Contacts";
+import Employees from "./components/Employees";
+import Branch from "./components/Employees";
+import Analytics from "./components/Analytics";
+import Settings from "./components/Settings";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  let history = useHistory();
+
+  useEffect(() => {
+      history.push("/deals");
+  }, [history]);
+
+  return(
+    <>
+    <Sidebar />
+    <Switch>
+      <Route path="/deals" component={Deals} />
+      <Route path="/contacts" component={Contacts} />
+      <Route path="/employees" component={Employees} />
+      <Route path="/branch" component={Branch} />
+      <Route path="/analytics" component={Analytics} />
+      <Route path="/settings" component={Settings} />
+    </Switch>
+    </>
+  )
 }
 
-export default App;
+export default App
