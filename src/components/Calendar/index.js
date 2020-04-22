@@ -39,7 +39,6 @@ const Calendar = () => {
 
     const handleClick = (index) => {
          setActiveItem(index)
-         console.log("The index is", index);
     }
 
     return (

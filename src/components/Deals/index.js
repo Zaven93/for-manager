@@ -2,8 +2,10 @@ import React from "react";
 import "./Deals.scss";
 import Calendar from "../Calendar";
 import Profile from "../Profile";
+import DealsTable from "../DealsTable";
 import dateLeft from "../../assets/img/choose-date-left.svg";
 import dateRight from "../../assets/img/choose-date-right.svg";
+import search_icon from "../../assets/img/search_icon.svg";
 
 const Deals = () => {
     return(
@@ -29,10 +31,11 @@ const Deals = () => {
                     <div className="dropdown-history"><span>Last 7 days</span><img src={dateLeft} alt="dropdown button" /></div>
                 </div>
                 <div className="search-input">
-                    <img src={search-icon} alt="search icon" />
+                    <img src={search_icon} alt="search icon" />
                     <input placeholder="Search" type="text" id="search"/>
                 </div>
             </div>
+            <DealsTable />
         </div>
         </>
     )
