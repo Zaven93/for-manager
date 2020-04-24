@@ -1,13 +1,13 @@
 import React, {useEffect} from "react";
 import Sidebar from "./components/Sibar";
-import "./App.scss"
+import "./App.scss";
 import { Switch, Route, useHistory } from "react-router-dom";
-import Deals from "./components/Deals";
-import Contacts from "./components/Contacts";
-import Employees from "./components/Employees";
-import Branch from "./components/Employees";
-import Analytics from "./components/Analytics";
-import Settings from "./components/Settings";
+import Deals from "./containers/Deals";
+import Contacts from "./containers/Contacts";
+import Employees from "./containers/Employees";
+import Branch from "./containers/Employees";
+import Analytics from "./containers/Analytics";
+import Settings from "./containers/Settings";
 
 const App = () => {
   let history = useHistory();
@@ -31,4 +31,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;

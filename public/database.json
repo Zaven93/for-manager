@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "fullname": "zaven avanesyan",
+        "dealDate": "21/03/2020",
+        "dealTime": "13:00-14.00",
+        "employee": {
+            "fullname": "vasil petrov"
+        },
+        "role": "photographer",
+        "price": 20000,
+        "status": "in process"
+    },
+    {
+        "id": 2,
+        "fullname": "gurgen sogomonyan",
+        "dealDate": "21/03/2020",
+        "dealTime": "13:00-14.00",
+        "employee": {
+            "fullname": "maria sarkisyan"
+        },
+        "role": "handler",
+        "price": 20000,
+        "status": "in process"
+    },
+    {
+        "id": 3,
+        "fullname": "garik grigoryan",
+        "dealDate": "21/03/2020",
+        "dealTime": "13:00-14.00",
+        "employee": {
+            "fullname": "avetis davidyan"
+        },
+        "role": "photographer",
+        "price": 20000,
+        "status": "in process"
+    },
+    {
+        "id": 4,
+        "fullname": "karlen arustamyan",
+        "dealDate": "21/03/2020",
+        "dealTime": "13:00-14.00",
+        "employee": {
+            "fullname": "artur ayrapetyan"
+        },
+        "role": "hookah man",
+        "price": 20000,
+        "status": "in process"
+    },
+    {
+        "id": 5,
+        "fullname": "vrej muradyan",
+        "dealDate": "21/03/2020",
+        "dealTime": "13:00-14.00",
+        "employee": {
+            "fullname": "gevorg movsisyan"
+        },
+        "role": "hair cutter",
+        "price": 20000,
+        "status": "in process"
+    },
+    {
+        "id": 6,
+        "fullname": "artyom matevosyan",
+        "dealDate": "21/03/2020",
+        "dealTime": "13:00-14.00",
+        "employee": {
+            "fullname": "mgrdich minasyan"
+        },
+        "role": "frontend developer",
+        "price": 20000,
+        "status": "in process"
+    }
+
+]

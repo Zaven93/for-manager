@@ -1,0 +1,96 @@
+.table-container {
+    background: #F3F3F3;
+    padding: 40px 40px 0;
+    margin-top: 8px;
+    font-family: "Roboto", sans-serif;
+
+    h1{
+       font-size: 36px;
+       line-height: 42px;
+       color: #626262;
+       font-weight: 500;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        
+        thead {
+            tr{
+                height: 60px;
+                background: #ffffff;
+                border-radius: 8px;
+                border-bottom: 8px solid #F3F3F3;
+                text-align: left;
+                padding-left: 15px;
+
+                th {
+                    padding-left: 15px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 16px;
+                    color: #626262;
+                }
+            }
+        }
+        tbody {
+            tr {
+                height: 80px;
+                background: #ffffff;
+                border-bottom: 8px solid #F3F3F3;
+              
+
+                td {
+                     text-align: left;
+                     padding-left: 15px;
+                     font-weight: 500;
+                     font-size: 14px;
+                     line-height: 16px;
+                     color: #626262;
+
+
+                     img {
+                         cursor: pointer;
+                         &:first-of-type {
+                             margin-right: 8px;
+                         }
+                     }
+                }
+                .fullname, 
+                .employee-fullname,
+                .status,
+                .role {
+                    text-transform: capitalize;
+                }
+
+                .employee-fullname {
+                    position: relative;
+                    &:before {
+                        content: "";
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: #2C7AD6;
+                        position: absolute;
+                        left: -6px;
+                        transform: translateY(40%);
+                    }
+                }
+
+                .role {
+                    position: relative;
+                    &:before {
+                        content: "";
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        border: 1px solid #888888;
+                        position: absolute;
+                        left: -6px;
+                        transform: translateY(40%);
+                    }
+                }
+            }
+        }
+    }
+}

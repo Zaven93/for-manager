@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, {useState} from "react";
 import "./Calendar.scss";
 import buttonRight from "../../assets/img/button-right.svg";
@@ -38,8 +41,8 @@ const Calendar = () => {
     const [activeItem, setActiveItem] = useState(-1);
 
     const handleClick = (index) => {
-         setActiveItem(index)
-    }
+         setActiveItem(index);
+    };
 
     return (
         <div className="calendar-container">
@@ -54,14 +57,14 @@ const Calendar = () => {
             </div>
             <div className="week-days">
                 {weekDays.map((weekDay, index) => (
-                    <span key={index} className="dates">
+                    <span key={weekDay} className="dates">
                     <h1>{weekDay.weekDay}</h1>
                     <p className={activeItem === index ? "active-day" : ""} onClick={handleClick.bind(this, index)}>{weekDay.weekNum}</p>
                     </span>
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Calendar;

@@ -1,11 +1,13 @@
 import React from "react";
 import "./Deals.scss";
-import Calendar from "../Calendar";
-import Profile from "../Profile";
-import DealsTable from "../DealsTable";
+import Calendar from "../../components/Calendar";
+import Profile from "../../components/Profile";
+import DealsTable from "../../components/DealsTable";
+import Pagination from "../../components/Pagination";
 import dateLeft from "../../assets/img/choose-date-left.svg";
 import dateRight from "../../assets/img/choose-date-right.svg";
-import search_icon from "../../assets/img/search_icon.svg";
+import searchIcon from "../../assets/img/search_icon.svg";
+
 
 const Deals = () => {
     return(
@@ -31,14 +33,15 @@ const Deals = () => {
                     <div className="dropdown-history"><span>Last 7 days</span><img src={dateLeft} alt="dropdown button" /></div>
                 </div>
                 <div className="search-input">
-                    <img src={search_icon} alt="search icon" />
+                    <img src={searchIcon} alt="search icon" />
                     <input placeholder="Search" type="text" id="search"/>
                 </div>
             </div>
             <DealsTable />
+            <Pagination />
         </div>
         </>
-    )
-}
+    );
+};
 
 export default Deals;
