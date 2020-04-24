@@ -32,7 +32,9 @@ const DealsTable = () => {
                    </tr>
                </thead>
                <tbody>
+                   <tr className="empty-space" />
                    {clientsData && clientsData.map(client => (
+                       <>
                        <tr key={client.id}>
                            <td className="fullname">{client.fullname}</td>
                            <td>{client.dealDate}</td>
@@ -46,6 +48,8 @@ const DealsTable = () => {
                                <img src={deleteIcon} alt="delete"/>
                            </td>
                        </tr>
+                       <tr className="empty-space" />
+                       </>
                    ))}
                </tbody>
            </table>

@@ -18,9 +18,6 @@
         thead {
             tr{
                 height: 60px;
-                background: #ffffff;
-                border-radius: 8px;
-                border-bottom: 8px solid #F3F3F3;
                 text-align: left;
                 padding-left: 15px;
 
@@ -30,6 +27,17 @@
                     font-weight: bold;
                     line-height: 16px;
                     color: #626262;
+                    background: #ffffff;
+
+                    &:first-child {
+                        border-bottom-left-radius: 8px;
+                        border-top-left-radius: 8px;
+                    }
+
+                    &:last-child {
+                        border-bottom-right-radius: 8px;
+                        border-top-right-radius: 8px;
+                    }
                 }
             }
         }
@@ -37,9 +45,6 @@
             tr {
                 height: 80px;
                 background: #ffffff;
-                border-bottom: 8px solid #F3F3F3;
-              
-
                 td {
                      text-align: left;
                      padding-left: 15px;
@@ -54,6 +59,16 @@
                          &:first-of-type {
                              margin-right: 8px;
                          }
+                     }
+
+                     &:first-child {
+                        border-bottom-left-radius: 8px;
+                        border-top-left-radius: 8px;
+                    }
+
+                     &:last-child {
+                        border-bottom-right-radius: 8px;
+                        border-top-right-radius: 8px;
                      }
                 }
                 .fullname, 
@@ -89,6 +104,11 @@
                         left: -6px;
                         transform: translateY(40%);
                     }
+                }
+
+                &.empty-space {
+                    height: 8px;
+                    background: #F3F3F3;
                 }
             }
         }
